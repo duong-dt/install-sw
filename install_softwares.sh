@@ -2,7 +2,7 @@
 source $HOME/.bash_profile
 source $HOME/.bashrc
 
-cd $(dirname $0)
+cd ${TMPDIR:-/tmp}
 # Find the base Ubuntu version
 UBUNTU_VERSION=$(inxi -Sx | grep -iPo 'ubuntu [0-9]{2}\.[0-9]{2}' | tr -d '[:alpha:][:blank:]')
 
@@ -92,7 +92,7 @@ curl -sSfL https://raw.githubusercontent.com/ajeetdsouza/zoxide/main/install.sh 
 # eget
 echo
 echo "Download & install eget"
-curl https://zyedidia.github.io/eget.sh | sh && mv ./eget $HOME/.local/bin/eget
+curl https://zyedidia.github.io/eget.sh | sh && mv $PWD/eget $HOME/.local/bin/eget
 
 # Install others (in ~/.eget.toml) via eget
 $HOME/.local/bin/eget -D
