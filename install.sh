@@ -1,6 +1,5 @@
 #!/bin/bash
-source $HOME/.bash_profile
-source $HOME/.bashrc
+source $HOME/.profile
 
 cd ${TMPDIR:-/tmp}
 # Find the base Ubuntu version
@@ -22,9 +21,9 @@ sudo add-apt-repository ppa:neovim-ppa/unstable -y
 sudo apt install -y curl wget
 
 # brave-browser release
-sudo curl -fsSLo /usr/share/keyrings/brave-browser-archive-keyring.gpg https://brave-browser-apt-release.s3.brave.com/brave-browser-archive-keyring.gpg
-echo "deb [signed-by=/usr/share/keyrings/brave-browser-archive-keyring.gpg] https://brave-browser-apt-release.s3.brave.com/ stable main" \
-| sudo tee /etc/apt/sources.list.d/brave-browser-release.list
+# sudo curl -fsSLo /usr/share/keyrings/brave-browser-archive-keyring.gpg https://brave-browser-apt-release.s3.brave.com/brave-browser-archive-keyring.gpg
+# echo "deb [signed-by=/usr/share/keyrings/brave-browser-archive-keyring.gpg] https://brave-browser-apt-release.s3.brave.com/ stable main" \
+# | sudo tee /etc/apt/sources.list.d/brave-browser-release.list
 
 # SourceGit repo
 curl https://codeberg.org/api/packages/yataro/debian/repository.key | sudo tee /etc/apt/keyrings/sourcegit.asc
@@ -42,7 +41,7 @@ curl https://gitlab.com/volian/volian-archive/-/raw/main/install-nala.sh | bash
 
 # common tool
 sudo nala install -y jq xclip zbar-tools vlc git sourcegit copyq \
-brave-browser homebank qbittorrent zsh borgbackup yakuake meld ibus \
+homebank qbittorrent zsh borgbackup yakuake meld ibus ibus-gtk \
 gparted adb fastboot curl wget nodejs neovim python3-pip python3-pyfuse3
 
 # oh-my-zsh
@@ -98,8 +97,8 @@ curl https://zyedidia.github.io/eget.sh | sh && mv $PWD/eget $HOME/.local/bin/eg
 $HOME/.local/bin/eget -D
 
 # Install python tool via uv
-uv tool install --upgrade vorta
-uv tool install --upgrade virtualenvwrapper
+uv tool install vorta
+uv tool install virtualenvwrapper
 
 # Cleanup
 sudo -k
