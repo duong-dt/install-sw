@@ -55,11 +55,11 @@ fi
 # Common python3
 
 # VSCode
-echo
-echo "Download & install VSCode"
-wget -o "${TMPDIR:-/tmp}/wget-vscode.log" --show-progress -O "vscode_x86_64.deb" -c \
-"https://code.visualstudio.com/sha/download?build=stable&os=linux-deb-x64" \
- && sudo nala install "$PWD/vscode_x86_64.deb" -y
+# echo
+# echo "Download & install VSCode"
+# wget -o "${TMPDIR:-/tmp}/wget-vscode.log" --show-progress -O "vscode_x86_64.deb" -c \
+# "https://code.visualstudio.com/sha/download?build=stable&os=linux-deb-x64" \
+#  && sudo nala install "$PWD/vscode_x86_64.deb" -y
 
 # Bitwarden Client
 echo
