@@ -100,6 +100,9 @@ $HOME/.local/bin/eget -D
 uv tool install vorta
 uv tool install virtualenvwrapper
 
+# Install Localsend (downloaded by eget)
+sudo nala install ./localsend-latest.deb -y
+
 # Cleanup
 sudo -k
 rm $PWD/*.deb
