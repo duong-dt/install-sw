@@ -13,7 +13,7 @@ while true; do sleep 60; kill -0 "$$" || exit; sudo -v; done 2>/dev/null &
 
 
 # common tool
-sudo nala install -y --update jq xclip zbar-tools vlc git sourcegit copyq trash-cli syncthing \
+sudo nala install -y --update jq xclip zbar-tools vlc git easytag sourcegit copyq unrar syncthing \
 homebank qbittorrent zsh borgbackup yakuake meld ibus ibus-gtk ibus-unikey ibus-hangul nala megasync \
 gparted adb fastboot curl wget nodejs neovim python3-pip python3-pyfuse3 python3-venv
 
@@ -54,6 +54,10 @@ uv tool install --upgrade virtualenvwrapper
 
 # Install Localsend (downloaded by eget)
 sudo nala install $HOME/.local/share/eget/localsend-latest.deb -y
+
+# Install flatpaks
+flatpak update --noninteractive flathub app.zen_browser.zen
+flatpak update --noninteractive flathub eu.betterbird.Betterbird
 
 # Cleanup
 sudo -k
