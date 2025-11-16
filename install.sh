@@ -16,6 +16,7 @@ sudo add-apt-repository ppa:mdoyen/homebank -y
 sudo add-apt-repository ppa:qbittorrent-team/qbittorrent-stable -y
 sudo add-apt-repository ppa:ubuntuhandbook1/vlc -y
 sudo add-apt-repository ppa:neovim-ppa/unstable -y
+sudo add-apt-repository ppa:jonaski/strawberry -y
 
 # Install curl & wget first
 sudo apt install -y curl wget
