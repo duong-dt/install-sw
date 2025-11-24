@@ -57,8 +57,8 @@ uv tool install --upgrade virtualenvwrapper
 sudo nala install $HOME/.local/share/eget/localsend-latest.deb -y
 
 # Install flatpaks
-flatpak update --noninteractive flathub app.zen_browser.zen
-flatpak update --noninteractive flathub eu.betterbird.Betterbird
+flatpak update app.zen_browser.zen --noninteractive
+flatpak update eu.betterbird.Betterbird --noninteractive
 
 # Cleanup
 sudo -k
