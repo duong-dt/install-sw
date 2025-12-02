@@ -44,6 +44,7 @@ curl https://gitlab.com/volian/volian-archive/-/raw/main/install-nala.sh | bash
 # common tool
 sudo nala install -y jq xclip zbar-tools vlc easytag strawberry git sourcegit copyq unrar syncthing \
 homebank qbittorrent zsh borgbackup yakuake meld ibus ibus-gtk ibus-unikey ibus-hangul yt-dlp ffmpeg \
+xapp-vorbiscomment-thumbnailer \
 foliate gparted adb fastboot curl wget nodejs neovim python3-pip python3-pyfuse3 python3-venv
 
 # oh-my-zsh
