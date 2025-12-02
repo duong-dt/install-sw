@@ -1,0 +1,48 @@
+[global]
+target = "~/.local/bin"
+quiet = false
+upgrade_only = true
+
+["zyedidia/eget"]
+
+["zyedidia/micro"]
+asset_filters = ["static", ".tar.gz", "^.sha"]
+
+["junegunn/fzf"]
+
+["sharkdp/fd"]
+asset_filters = ["^musl"]
+
+["sharkdp/bat"]
+asset_filters = ["^musl"]
+
+["BurntSushi/ripgrep"]
+asset_filters = ["^.sha"]
+target = "~/.local/bin/rg"
+
+["tldr-pages/tlrc"]
+asset_filters = ["linux", "gnu", ".tar.gz"]
+file = "tldr"
+target = "~/.local/bin/tldr"
+
+["sxyazi/yazi"]
+asset_filters = ["^musl"]
+file = "{yazi,ya}"
+all = true
+
+["astral-sh/uv"]
+asset_filters = ["^musl"]
+file = "{uv,uvx}"
+all = true
+
+["casey/just"]
+
+["jesseduffield/lazygit"]
+asset_filters = ["linux", "x86_64", ".tar.gz"]
+
+["localsend/localsend"]
+asset_filters = [".deb"]
+target = "~/.local/share/eget/localsend-latest.deb"
+
+["aandrew-me/ytDownloader"]
+asset_filters = [".AppImage"]

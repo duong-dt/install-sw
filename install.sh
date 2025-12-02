@@ -1,4 +1,5 @@
 #!/bin/bash
+DIR="$(cd "$(dirname "$0")" && pwd)"
 source $HOME/.profile
 
 cd ${TMPDIR:-/tmp}
@@ -93,6 +94,13 @@ curl -sSfL https://raw.githubusercontent.com/ajeetdsouza/zoxide/main/install.sh 
 echo
 echo "Download & install eget"
 curl https://zyedidia.github.io/eget.sh | sh && mv $PWD/eget $HOME/.local/bin/eget
+
+if [ -d "$HOME/.eget.toml" ]; then
+  echo "~/.eget.toml already exists"
+else
+  echo "copy .eget.toml to ~"
+  cp $DIR/.eget.toml $HOME/.eget.toml
+fi
 
 # Install others (in ~/.eget.toml) via eget
 $HOME/.local/bin/eget -D
