@@ -13,11 +13,19 @@ while true; do sleep 60; kill -0 "$$" || exit; sudo -v; done 2>/dev/null &
 
 
 # common tool
-sudo nala install -y --update jq xclip zbar-tools vlc git easytag strawberry sourcegit copyq unrar syncthing \
-homebank qbittorrent zsh borgbackup yakuake meld ibus ibus-gtk ibus-unikey ibus-hangul yt-dlp ffmpeg \
+sudo nala install -y --update \
+jq xclip zbar-tools copyq gparted unrar \
+vlc easytag easyeffects strawberry foliate \
+git sourcegit zsh yakuake \
+homebank qbittorrent \
+borgbackup syncthing \
+yt-dlp ffmpeg \
+ibus ibus-gtk ibus-unikey ibus-hangul \
 xapp-vorbiscomment-thumbnailer \
-nala megasync \
-foliate gparted adb fastboot curl wget nodejs neovim python3-pip python3-pyfuse3 python3-venv
+adb fastboot \
+curl wget nodejs neovim \
+python3-pip python3-pyfuse3 python3-venv \
+nala megasync
 
 
 # Bitwarden Client
