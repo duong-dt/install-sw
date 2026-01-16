@@ -50,7 +50,7 @@ curl https://gitlab.com/volian/volian-archive/-/raw/main/install-nala.sh | bash
 
 # common tool
 sudo nala install -y \
-jq xclip zbar-tools copyq gparted unrar \
+jq xclip zbar-tools copyq gparted unrar xarchiver \
 vlc easytag easyeffects strawberry yacreader \
 git sourcegit zsh yakuake \
 homebank qbittorrent \
