@@ -28,20 +28,7 @@ python3-pip python3-pyfuse3 python3-venv \
 nala megasync
 
 
-# Bitwarden Client
-echo
-echo "Download & install Bitwarden"
-wget -o "${TMPDIR:-/tmp}/wget-bitwarden.log" --show-progress -O "bitwarden_amd64.deb" -c \
-"https://vault.bitwarden.com/download/?app=desktop&platform=linux&variant=deb" \
- && sudo nala install "$PWD/bitwarden_amd64.deb" -y
-
-# VPN Client
-# sudo nala install -y proton-vpn-gnome-desktop protonvpn-stable-release
-echo
-echo "Download & install Windscribe"
-wget -o "${TMPDIR:-/tmp}/wget-windscribe.log" --show-progress -O "windscribe_amd64.deb" -c \
-"https://windscribe.com/install/desktop/linux_deb_x64" \
- && sudo nala install "$PWD/windscribe_amd64.deb" -y
+deb-get upgrade --dg-only
 
 # Mega.nz Sync Client
 # echo

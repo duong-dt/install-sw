@@ -26,7 +26,7 @@ file = "tldr"
 target = "~/.local/bin/tldr"
 
 ["sxyazi/yazi"]
-asset_filters = ["^musl"]
+asset_filters = ["^musl", ".zip"]
 file = "{yazi,ya}"
 all = true
 
@@ -40,9 +40,4 @@ all = true
 ["jesseduffield/lazygit"]
 asset_filters = ["linux", "x86_64", ".tar.gz"]
 
-["localsend/localsend"]
-asset_filters = [".deb"]
-target = "~/.local/share/eget/localsend-latest.deb"
 
-["aandrew-me/ytDownloader"]
-asset_filters = [".AppImage"]

@@ -19,8 +19,8 @@ sudo add-apt-repository ppa:ubuntuhandbook1/vlc -y
 sudo add-apt-repository ppa:neovim-ppa/unstable -y
 sudo add-apt-repository ppa:jonaski/strawberry -y
 
-# Install curl & wget first
-sudo apt install -y curl wget
+# Install pre-requisites first
+sudo apt install -y curl wget lsb-release
 
 # brave-browser release
 # sudo curl -fsSLo /usr/share/keyrings/brave-browser-archive-keyring.gpg https://brave-browser-apt-release.s3.brave.com/brave-browser-archive-keyring.gpg
@@ -34,6 +34,9 @@ echo "deb [signed-by=/etc/apt/keyrings/sourcegit.asc, arch=amd64,arm64] https://
 
 # NodeJS repo
 curl -fsSL https://deb.nodesource.com/setup_23.x | sudo bash -E
+
+# deb-get
+curl -sL https://raw.githubusercontent.com/wimpysworld/deb-get/main/deb-get | sudo -E bash -s install deb-get
 
 # Nala
 curl https://gitlab.com/volian/volian-archive/-/raw/main/install-nala.sh | bash
@@ -63,29 +66,9 @@ else
   sh -c "$(wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
 fi
 
-# Common python3
-
-# VSCode
-# echo
-# echo "Download & install VSCode"
-# wget -o "${TMPDIR:-/tmp}/wget-vscode.log" --show-progress -O "vscode_x86_64.deb" -c \
-# "https://code.visualstudio.com/sha/download?build=stable&os=linux-deb-x64" \
-#  && sudo nala install "$PWD/vscode_x86_64.deb" -y
-
-# Bitwarden Client
-echo
-echo "Download & install Bitwarden"
-wget -o "${TMPDIR:-/tmp}/wget-bitwarden.log" --show-progress -O "bitwarden_amd64.deb" -c \
-"https://vault.bitwarden.com/download/?app=desktop&platform=linux&variant=deb" \
- && sudo nala install "$PWD/bitwarden_amd64.deb" -y
-
 # VPN Client
-# sudo nala install -y proton-vpn-gnome-desktop protonvpn-stable-release
-echo
-echo "Download & install Windscribe"
-wget -o "${TMPDIR:-/tmp}/wget-windscribe.log" --show-progress -O "windscribe_amd64.deb" -c \
-"https://windscribe.com/install/desktop/linux_deb_x64" \
- && sudo nala install "$PWD/windscribe_amd64.deb" -y
+deb-get install localsend bitwarden protonvpn \
+  onlyoffice-desktopeditors ytdownloader
 
 # Mega.nz Sync Client
 echo
