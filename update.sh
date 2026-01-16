@@ -14,7 +14,7 @@ while true; do sleep 60; kill -0 "$$" || exit; sudo -v; done 2>/dev/null &
 
 # common tool
 sudo nala install -y --update \
-jq xclip zbar-tools copyq gparted unrar xarchiver \
+jq xclip zbar-tools copyq gparted unrar xarchiver nemo-compare \
 vlc easytag easyeffects strawberry yacreader \
 git sourcegit zsh yakuake \
 homebank qbittorrent \
