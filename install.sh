@@ -73,7 +73,7 @@ fi
 # EULA accept for onlyoffice
 echo msttcorefonts msttcorefonts/accepted-mscorefonts-eula select true | sudo debconf-set-selections
 
-deb-get install localsend bitwarden protonvpn \
+sudo deb-get install localsend bitwarden protonvpn \
   onlyoffice-desktopeditors ytdownloader deb-get
 
 # Mega.nz Sync Client

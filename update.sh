@@ -28,7 +28,7 @@ python3-pip python3-pyfuse3 python3-venv \
 nala megasync
 
 
-deb-get upgrade --dg-only
+sudo deb-get upgrade --dg-only
 
 # Mega.nz Sync Client
 # echo
