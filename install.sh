@@ -70,9 +70,11 @@ else
   sh -c "$(wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
 fi
 
-# VPN Client
+# EULA accept for onlyoffice
+echo msttcorefonts msttcorefonts/accepted-mscorefonts-eula select true | sudo debconf-set-selections
+
 deb-get install localsend bitwarden protonvpn \
-  onlyoffice-desktopeditors ytdownloader
+  onlyoffice-desktopeditors ytdownloader deb-get
 
 # Mega.nz Sync Client
 echo
