@@ -62,9 +62,6 @@ $HOME/.local/bin/eget -D
 uv tool install --upgrade vorta
 uv tool install --upgrade virtualenvwrapper
 
-# Install Localsend (downloaded by eget)
-sudo nala install $HOME/.local/share/eget/localsend-latest.deb -y
-
 # Install flatpaks
 flatpak update app.zen_browser.zen --noninteractive
 flatpak update eu.betterbird.Betterbird --noninteractive
