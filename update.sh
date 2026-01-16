@@ -65,6 +65,7 @@ uv tool install --upgrade virtualenvwrapper
 # Install flatpaks
 flatpak update app.zen_browser.zen --noninteractive
 flatpak update eu.betterbird.Betterbird --noninteractive
+flatpak update org.localsend.localsend_app --noninteractive
 
 # Cleanup
 sudo -k
