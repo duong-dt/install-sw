@@ -60,7 +60,8 @@ ibus ibus-gtk ibus-unikey ibus-hangul \
 xapp-vorbiscomment-thumbnailer \
 adb fastboot \
 curl wget nodejs neovim \
-python3-pip python3-pyfuse3 python3-venv
+python3-pip python3-pyfuse3 python3-venv \
+dconf-cli
 
 # oh-my-zsh
 if [ -d "$HOME/.oh-my-zsh" ]; then

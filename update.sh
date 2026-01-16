@@ -25,6 +25,7 @@ xapp-vorbiscomment-thumbnailer \
 adb fastboot \
 curl wget nodejs neovim \
 python3-pip python3-pyfuse3 python3-venv \
+dconf-cli \
 nala megasync
 
 
