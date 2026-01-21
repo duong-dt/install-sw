@@ -15,7 +15,7 @@ while true; do sleep 60; kill -0 "$$" || exit; sudo -v; done 2>/dev/null &
 # common tool
 sudo nala install -y --update \
 jq xclip zbar-tools copyq gparted unrar xarchiver nemo-compare \
-vlc easytag easyeffects strawberry yacreader \
+vlc easytag easyeffects strawberry calibre \
 git sourcegit zsh yakuake \
 homebank qbittorrent \
 borgbackup syncthing \
@@ -53,6 +53,7 @@ uv tool install --upgrade virtualenvwrapper
 # Install flatpaks
 flatpak update app.zen_browser.zen --noninteractive
 flatpak update eu.betterbird.Betterbird --noninteractive
+flatpak update info.febvre.Komikku --noninteractive
 
 # Cleanup
 sudo -k

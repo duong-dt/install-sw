@@ -35,10 +35,6 @@ echo "deb [signed-by=/etc/apt/keyrings/sourcegit.asc, arch=amd64,arm64] https://
 # NodeJS repo
 curl -fsSL https://deb.nodesource.com/setup_23.x | sudo bash -E
 
-# yacreader repo
-echo 'deb http://download.opensuse.org/repositories/home:/selmf/xUbuntu_25.04/ /' | sudo tee /etc/apt/sources.list.d/home:selmf.list
-curl -fsSL https://download.opensuse.org/repositories/home:selmf/xUbuntu_25.04/Release.key | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/home_selmf.gpg > /dev/null
-
 # deb-get
 curl -sL https://raw.githubusercontent.com/wimpysworld/deb-get/main/deb-get | sudo -E bash -s install deb-get
 
@@ -51,7 +47,7 @@ curl https://gitlab.com/volian/volian-archive/-/raw/main/install-nala.sh | bash
 # common tool
 sudo nala install -y \
 jq xclip zbar-tools copyq gparted unrar xarchiver nemo-compare \
-vlc easytag easyeffects strawberry yacreader \
+vlc easytag easyeffects strawberry calibre \
 git sourcegit zsh yakuake \
 homebank qbittorrent \
 borgbackup syncthing \
@@ -111,6 +107,7 @@ uv tool install virtualenvwrapper
 # Install flatpaks
 flatpak install --noninteractive flathub app.zen_browser.zen
 flatpak install --noninteractive flathub eu.betterbird.Betterbird
+flatpak install --noninteractive flathub info.febvre.Komikku
 
 # Cleanup
 sudo -k
