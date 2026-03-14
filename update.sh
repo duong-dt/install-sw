@@ -25,6 +25,7 @@ xapp-vorbiscomment-thumbnailer \
 adb fastboot \
 curl wget nodejs neovim \
 python3-pip python3-pyfuse3 python3-venv \
+floorp \
 dconf-cli \
 nala megasync
 
@@ -51,7 +52,6 @@ uv tool install --upgrade vorta
 uv tool install --upgrade virtualenvwrapper
 
 # Install flatpaks
-flatpak update app.zen_browser.zen --noninteractive
 flatpak update eu.betterbird.Betterbird --noninteractive
 flatpak update info.febvre.Komikku --noninteractive
 

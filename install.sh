@@ -27,6 +27,10 @@ sudo apt install -y curl wget lsb-release
 # echo "deb [signed-by=/usr/share/keyrings/brave-browser-archive-keyring.gpg] https://brave-browser-apt-release.s3.brave.com/ stable main" \
 # | sudo tee /etc/apt/sources.list.d/brave-browser-release.list
 
+# Floorp repo
+curl -fsSL https://ppa.floorp.app/KEY.gpg | sudo gpg --dearmor -o /usr/share/keyrings/Floorp.gpg
+sudo curl -sS --compressed -o /etc/apt/sources.list.d/Floorp.list "https://ppa.floorp.app/Floorp.list"
+
 # SourceGit repo
 curl https://codeberg.org/api/packages/yataro/debian/repository.key | sudo tee /etc/apt/keyrings/sourcegit.asc
 echo "deb [signed-by=/etc/apt/keyrings/sourcegit.asc, arch=amd64,arm64] https://codeberg.org/api/packages/yataro/debian generic main" \
@@ -57,6 +61,7 @@ xapp-vorbiscomment-thumbnailer \
 adb fastboot \
 curl wget nodejs neovim \
 python3-pip python3-pyfuse3 python3-venv \
+floorp \
 dconf-cli
 
 # oh-my-zsh
@@ -105,7 +110,6 @@ uv tool install vorta
 uv tool install virtualenvwrapper
 
 # Install flatpaks
-flatpak install --noninteractive flathub app.zen_browser.zen
 flatpak install --noninteractive flathub eu.betterbird.Betterbird
 flatpak install --noninteractive flathub info.febvre.Komikku
 
