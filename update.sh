@@ -25,7 +25,6 @@ xapp-vorbiscomment-thumbnailer \
 adb fastboot \
 curl wget nodejs neovim \
 python3-pip python3-pyfuse3 python3-venv \
-floorp \
 dconf-cli \
 nala megasync
 
@@ -43,6 +42,9 @@ sudo deb-get upgrade --dg-only
 echo
 echo "Installing Zoxide"
 curl -sSfL https://raw.githubusercontent.com/ajeetdsouza/zoxide/main/install.sh | sh
+
+# Zen-Browser
+curl -fsSL https://github.com/zen-browser/updates-server/raw/refs/heads/main/install.sh | $SHELL
 
 # Install others (in ~/.eget.toml) via eget
 $HOME/.local/bin/eget -D
