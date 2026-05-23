@@ -103,6 +103,17 @@ fi
 # Install others (in ~/.eget.toml) via eget
 $HOME/.local/bin/eget -D
 
+# portable appman
+wget -q https://raw.githubusercontent.com/ivan-hc/AM/main/AM-INSTALLER \
+  && chmod a+x ./AM-INSTALLER \
+  && echo 2 | ./AM-INSTALLER \
+  && rm ./AM-INSTALLER
+
+echo "$HOME/.portable-appman" > $HOME/.config/appman/appman-config
+
+# Install portable apps
+echo y | appman -i mission-center
+
 # Install python tool via uv
 uv tool install vorta
 uv tool install virtualenvwrapper

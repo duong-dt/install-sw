@@ -49,6 +49,10 @@ curl -fsSL https://github.com/zen-browser/updates-server/raw/refs/heads/main/ins
 # Install others (in ~/.eget.toml) via eget
 $HOME/.local/bin/eget -D
 
+# Install others by appman
+appman -u --apps
+appman -s
+
 # Install python tool via uv
 uv tool install --upgrade vorta
 uv tool install --upgrade virtualenvwrapper
