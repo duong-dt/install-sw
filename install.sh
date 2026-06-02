@@ -53,6 +53,7 @@ homebank qbittorrent \
 borgbackup syncthing \
 yt-dlp ffmpeg \
 ibus ibus-gtk ibus-unikey ibus-hangul \
+input-remapper \
 xapp-vorbiscomment-thumbnailer \
 adb fastboot \
 curl wget nodejs neovim \
