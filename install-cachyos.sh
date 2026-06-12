@@ -13,9 +13,10 @@ while true; do sleep 60; kill -0 "$$" || exit; sudo -v; done 2>/dev/null &
 # Install packages from Arch repo
 sudo pacman -Syu --noconfirm \
 jq zbar unrar \
-git zsh yakuake \
+git zsh yakuake wl-clipboard \
 android-tools \
 vlc celluloid easytag easyeffects strawberry \
+qt6ct \
 komikku calibre okular \
 homebank qbittorrent \
 vorta borg syncthing kdiff3 \
