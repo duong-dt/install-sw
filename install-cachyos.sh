@@ -16,7 +16,7 @@ jq zbar unrar \
 git zsh yakuake wl-clipboard \
 android-tools \
 vlc celluloid easytag easyeffects strawberry \
-qt6ct \
+kaddressbook korganizer kdepim-addons \
 komikku calibre okular \
 homebank qbittorrent \
 vorta borg syncthing kdiff3 \
@@ -34,7 +34,7 @@ python-pyfuse3
 
 # Install packages from AUR
 paru -S --noconfirm \
-sourcegit-bin megasync-bin
+sourcegit-bin megasync-bin darkly-bin
 
 # Install tools from uv
 uv tool install virtualenvwrapper
