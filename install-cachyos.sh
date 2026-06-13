@@ -22,7 +22,7 @@ homebank qbittorrent \
 vorta borg syncthing kdiff3 \
 localsend bitwarden proton-vpn-gtk-app \
 onlyoffice-bin zen-browser-bin betterbird-bin \
-mission-center octopi \
+octopi \
 cachyos-gaming-meta lutris steam \
 fcitx5 fcitx5-configtool fcitx5-unikey fcitx5-mozc \
 distrobox toolbox podman \
