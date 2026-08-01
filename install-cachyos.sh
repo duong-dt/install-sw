@@ -34,7 +34,8 @@ python-pyfuse3
 
 # Install packages from AUR
 paru -S --noconfirm \
-sourcegit-bin megasync-bin darkly-bin
+sourcegit-bin megasync darkly-bin \
+jackett-bin flaresolverr
 
 # Install tools from uv
 uv tool install virtualenvwrapper
