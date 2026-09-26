@@ -30,11 +30,11 @@ fd fzf ripgrep bat micro \
 zoxide uv lazygit just yazi \
 ttf-firacode-nerd \
 curl wget nodejs neovim \
-python-pyfuse3
+python-pyfuse3 ffmpeg4.4
 
 # Install packages from AUR
 paru -S --noconfirm \
-sourcegit-bin megasync darkly-bin \
+sourcegit-bin megasync kde-material-you-colors \
 jackett-bin flaresolverr
 
 # Install tools from uv
