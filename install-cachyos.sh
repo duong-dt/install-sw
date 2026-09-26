@@ -35,7 +35,7 @@ python-pyfuse3 ffmpeg4.4
 # Install packages from AUR
 paru -S --noconfirm \
 sourcegit-bin megasync kde-material-you-colors \
-jackett-bin flaresolverr
+jackett-bin flaresolverr nls-bin
 
 # Install tools from uv
 uv tool install virtualenvwrapper
