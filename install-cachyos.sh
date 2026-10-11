@@ -15,7 +15,7 @@ sudo pacman -Syu --noconfirm \
 jq zbar unrar \
 git zsh yakuake wl-clipboard \
 android-tools \
-vlc celluloid easytag easyeffects strawberry \
+celluloid easytag easyeffects strawberry \
 kaddressbook korganizer kdepim-addons \
 komikku calibre okular \
 homebank qbittorrent \

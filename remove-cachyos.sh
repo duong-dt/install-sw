@@ -14,6 +14,7 @@ while true; do sleep 60; kill -0 "$$" || exit; sudo -v; done 2>/dev/null &
 
 
 to_remove=(\
+vlc-plugins-all \
 cachyos-fish-config fish fisher fish-pure-prompt fish-autorepair \
 eza expac shelly meld \
 kdeconnect kcontacts kpeople kwalletmanager \
