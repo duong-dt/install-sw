@@ -27,7 +27,7 @@ cachyos-gaming-meta lutris steam \
 fcitx5 fcitx5-configtool fcitx5-unikey fcitx5-mozc \
 distrobox podman \
 fd fzf ripgrep bat micro \
-zoxide uv lazygit just yazi \
+zoxide uv lazygit just yazi atuin \
 ttf-firacode-nerd \
 curl wget nodejs neovim \
 python-pyfuse3 ffmpeg4.4
