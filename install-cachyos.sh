@@ -13,7 +13,7 @@ while true; do sleep 60; kill -0 "$$" || exit; sudo -v; done 2>/dev/null &
 # Install packages from Arch repo
 sudo pacman -Syu --noconfirm \
 jq zbar unrar \
-git zsh yakuake wl-clipboard \
+git zsh kitty wl-clipboard \
 android-tools \
 celluloid easytag easyeffects strawberry \
 kaddressbook korganizer kdepim-addons \
@@ -22,7 +22,7 @@ homebank qbittorrent \
 vorta borg syncthing kdiff3 \
 localsend bitwarden proton-vpn-gtk-app \
 onlyoffice-bin zen-browser-bin betterbird-bin \
-octopi \
+octopi plasmazones \
 cachyos-gaming-meta lutris steam \
 fcitx5 fcitx5-configtool fcitx5-unikey fcitx5-mozc \
 distrobox podman \
